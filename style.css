@@ -1,0 +1,239 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: poppins;	
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+/* Navbar goes below here: */
+.navbar{
+	position: fixed;
+	min-height: 8vh;
+	background-color: #24355c;
+	font-family: 'Abril+Fatface', sans-serif;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 70px;
+	z-index: 1;	
+}
+.nav-links{
+	display: flex;
+	justify-content: right;
+	list-style: none;
+	margin-right: 12%;
+}
+.logo{
+	flex: 1 1 auto;
+	margin-left: 7%;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 30px; 
+}
+a{
+	margin: 10px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+a:hover{
+color: black;
+}
+
+/* Banner Area / Home page goes below here:*/
+
+.banner-area {
+	position: relative;
+	background-image: url(images/lake.jpg);
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.fade::after{
+    content: 'In the beginning...';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fade:hover::after{
+    opacity: 0.5;
+
+}
+
+/* Body Sections goes below here:- */
+
+.about-area, .projects-area, .tech-stack-area, .blog-area {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+	height: 700px;
+} 
+
+.text-part{
+	width: 65%;
+	height: 80%;
+
+}
+h1{
+	font-size: 50px;
+
+}
+p{
+	font-size: 30px;
+	line-height: 40px;
+}
+
+/* Burger Menu goes here:- */
+
+.burger{
+	display: none; /* i have also tried block, inline-block, and inline. */
+	cursor: pointer;
+}
+
+.burger div{
+	width: 25px;
+	height: 3px;
+	background-color: rgb(226, 226, 226);
+	margin: 5px;
+	transition: 0.3s ease;
+}
+
+@media screen and (max-width: 1024px){
+	.nav-links{
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 770px){
+	body{
+		overflow-x: hidden; 
+	}
+	.nav-links{
+		position: absolute;
+		right: 0px;
+		height: 15vh;
+		top: 7vh;
+		background-color: #24355c; /*consider making it transparent later */
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		width: 25%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+		
+	}
+	.nav-links li{
+		opacity: 0;
+	}
+	.burger{
+		display: block;
+	}
+	.footer {
+		background-color:  #24355c;
+		height: 115px;	
+	}
+
+
+	.nav-active{
+		transform: translateX(0%);
+	}
+
+
+	@keyframes navLinkFade{
+		from {
+			opacity: 0;
+			transform: translateX(25%);
+		}
+		to{
+			opacity: 1;
+			transform: translateX(0px);
+		}
+	}
+
+	.toggle .line1{
+		transform: rotate(-45deg) translate(-5px,6px);
+	}
+	.toggle .line2{
+		opacity: 0;	
+	}
+	.toggle .line3{
+		transform: rotate(45deg) translate(-5px,-6px);	
+	}
+}
+
+
+/* footer Section goes below here: */
+footer{
+    background-color: #24355c;
+    height: 115px;
+ }
+
+.footer{   
+
+    font-size: 10px;
+    text-align: center;  
+    width: 100%;
+    height: 125px;  
+}
+
+
+footer > ul > li {
+    justify-content: space-around;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #f1f1f1;
+    margin: 20px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px powderblue;
+    overflow:hidden; 
+    position:relative;
+}
+.social-item i {
+    color: #3498db;
+    line-height: 50px;
+    font-size: 28px;
+    transition: 0.2s linear;
+}
+footer > ul > li:hover i{
+    transform: scale(1.3);
+    color:  #24355c;
+}
+footer > ul > li > a{
+    margin: 0;
+}
+
+footer > .footer-copyright{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 50px;
+    
+}
+
+footer > .footer-copyright a {
+   text-decoration: none;
+   color: white;
+}
