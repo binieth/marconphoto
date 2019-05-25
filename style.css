@@ -80,7 +80,7 @@ color: black;
 
 /* Body Sections goes below here:- */
 
-.about-area, .projects-area, .tech-stack-area, .blog-area {
+.about-area, .portfolio-area, .contact-area {
 	position: relative;
 	display: flex;
 	justify-content: space-around;
@@ -105,85 +105,6 @@ p{
 	line-height: 40px;
 }
 
-/* Burger Menu goes here:- */
-
-.burger{
-	display: none; /* i have also tried block, inline-block, and inline. */
-	cursor: pointer;
-}
-
-.burger div{
-	width: 25px;
-	height: 3px;
-	background-color: rgb(226, 226, 226);
-	margin: 5px;
-	transition: 0.3s ease;
-}
-
-@media screen and (max-width: 1024px){
-	.nav-links{
-		width: 60%;
-	}
-}
-
-@media screen and (max-width: 770px){
-	body{
-		overflow-x: hidden; 
-	}
-	.nav-links{
-		position: absolute;
-		right: 0px;
-		height: 15vh;
-		top: 7vh;
-		background-color: #24355c; /*consider making it transparent later */
-		display: flex;
-		flex-direction: column;
-		align-items: left;
-		width: 25%;
-		transform: translateX(100%);
-		transition: transform 0.5s ease-in;
-		
-	}
-	.nav-links li{
-		opacity: 0;
-	}
-	.burger{
-		display: block;
-	}
-	.footer {
-		background-color:  #24355c;
-		height: 115px;	
-	}
-
-
-	.nav-active{
-		transform: translateX(0%);
-	}
-
-
-	@keyframes navLinkFade{
-		from {
-			opacity: 0;
-			transform: translateX(25%);
-		}
-		to{
-			opacity: 1;
-			transform: translateX(0px);
-		}
-	}
-
-	.toggle .line1{
-		transform: rotate(-45deg) translate(-5px,6px);
-	}
-	.toggle .line2{
-		opacity: 0;	
-	}
-	.toggle .line3{
-		transform: rotate(45deg) translate(-5px,-6px);	
-	}
-}
-
-
 /* footer Section goes below here: */
 footer{
     background-color: #24355c;
@@ -198,33 +119,6 @@ footer{
     height: 125px;  
 }
 
-
-footer > ul > li {
-    justify-content: space-around;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background: #f1f1f1;
-    margin: 20px;
-    border-radius: 30%;
-    box-shadow: 0 5px 15px -5px powderblue;
-    overflow:hidden; 
-    position:relative;
-}
-.social-item i {
-    color: #3498db;
-    line-height: 50px;
-    font-size: 28px;
-    transition: 0.2s linear;
-}
-footer > ul > li:hover i{
-    transform: scale(1.3);
-    color:  #24355c;
-}
-footer > ul > li > a{
-    margin: 0;
-}
-
 footer > .footer-copyright{
     color: white;
     font-size: 15px;
@@ -233,7 +127,3 @@ footer > .footer-copyright{
     
 }
 
-footer > .footer-copyright a {
-   text-decoration: none;
-   color: white;
-}
