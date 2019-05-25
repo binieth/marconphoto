@@ -5,7 +5,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Frank+Ruhl+Libre|Playfair+Display|Quattrocento"
 	rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="contact.css">
 	<title>Marcon Photo</title>
 </head>
 <body>
@@ -44,18 +45,32 @@
 		</div>
 
 		<div class="contact-area" id="contact">
-			<div class="text-part">
-				<h1>Contact</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, laborum alias labore placeat voluptas
-					nemo, quae hic veritatis quam ipsam debitis unde animi nostrum impedit. Nam hic fugiat inventore
-				temporibus.</p>			
-			</div>
+                <section class="contact">
+                        <h1 class="title">Contact</h1>
+                        <form class="contact-form row">
+                           <div class="form-field col x-50">
+                              <input id="name" class="input-text js-input" type="text" required>
+                              <label class="label" for="name">Name</label>
+                           </div>
+                           <div class="form-field col x-50">
+                              <input id="email" class="input-text js-input" type="email" required>
+                              <label class="label" for="email">E-mail</label>
+                           </div>
+                           <div class="form-field col x-100">
+                              <input id="message" class="input-text js-input" type="text" required>
+                              <label class="label" for="message">Message</label>
+                           </div>
+                           <div class="form-field col x-100 align-center">
+                              <input class="submit-btn" type="submit" value="Submit">
+                           </div>
+                        </form>
+                </section>                 
 		</div>
 
 		<footer class="footer">
 			<div class="footer-copyright"> Copyright © 2019 Marcon Photography, All rights reserved</div>
 		</footer>
-
+        <script src = "contact.js"></script>
 		<script src="app.js"></script>
 	</body>
 </html>
