@@ -1,130 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 body{
+	font-family: 'Roboto Condensed', sans-serif;
 	margin: 0;
-	padding: 0;
-	font-family: poppins;	
-}
-
-html{
-	scroll-behavior: smooth;
-}
-
-/* Navbar goes below here: */
-.navbar{
-	position: fixed;
-	min-height: 8vh;
-	background-color: #24355c;
-	font-family: 'Abril+Fatface', sans-serif;
-	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
-	height: 70px;
-	z-index: 1;	
-}
-.nav-links{
-	display: flex;
-	justify-content: right;
-	list-style: none;
-	margin-right: 12%;
-}
-.logo{
-	flex: 1 1 auto;
-	margin-left: 7%;
-	letter-spacing: 1px;
-	font-weight: bold;
-	font-size: 30px; 
-}
-a{
-	margin: 10px;
-	color: #fff;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-a:hover{
-color: black;
-}
-
-/* Banner Area / Home page goes below here:*/
-
-.banner-area {
-	position: relative;
-	background-image: url(images/lake.jpg);
-	width: 100%;
-	height: 100vh;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-.fade::after{
-    content: 'In the beginning...';
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 70px;
-    background: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.fade:hover::after{
-    opacity: 0.5;
-
-}
-
-/* Body Sections goes below here:- */
-
-.about-area, .portfolio-area, .contact-area {
-	position: relative;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
-	flex-direction: row;
-	width: 100%;
-	height: 700px;
-} 
-
-.text-part{
-	width: 65%;
-	height: 80%;
-
+	background: #eeeeee;
+	height: auto;
 }
 h1{
-	font-size: 50px;
+	font-weight: 400;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	margin: 0;
 
 }
-p{
-	font-size: 30px;
-	line-height: 40px;
+h2 {
+	font-weight: 400;
+	font-size: 1.2rem;
+	text-transform: capitalize;
+	margin: 0;
 }
 
-/* footer Section goes below here: */
-footer{
-    background-color: #24355c;
-    height: 115px;
-    width: 100%;
- }
+img{
+	display: block;
+	width: 100%;
 
-.footer{   
-
-    font-size: 10px;
-    text-align: center;  
-   
-    height: 125px;  
 }
 
-footer > .footer-copyright{
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-    padding-left: 50px;
-    
+main {
+	max-width: 900px;
+	margin: auto;
+	box-shadow: 30px 0px 40px rgba(0,0,0,0.1), -30px 0px 40px rgba(0,0,0,0.4);
+}
+#landing {
+	background: #fff;
+
+}
+#landing-text {
+	display: flex;
+	flex: 0 1 40vw;
+	height: 50vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-right: 1rem;
+	padding-left: 1rem;
 }
 
+#landing-text h2 {
+	color:	#888;
+}
+#landing-image {
+	background: url(https://source.unsplash.com/De8wMYoSSBc);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 50vh;
+	flex: 0 1 60vw;
+	margin: 0;
+}
+
+.btn {
+	padding: 0.5rem 2rem;
+	border: 1px #ccc solid;
+	display: inline-block;
+	margin: 2rem 0 0;
+	border-radius: 50px;
+	text-decoration: none;
+	color: #333;
+	transition: background 500ms ease;
+
+}
+
+.btn:hover {
+	background: #f4f4f4;
+}
+
+#header {
+	padding: 1.5rem;
+	text-align: center;
+	background: #333;
+	color: white;
+}
+
+#header h2 {
+	border-left: dotted 1px #fff;
+	border-right: dotted 1px #fff;
+	display: inline-block;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+.caption{
+	padding: 0.8rem;
+	text-align: center;
+
+}
+
+footer {
+	text-align: center;
+	padding: 2rem 1rem;
+	margin: auto;
+	color: #333;
+}
+
+footer h3 {
+	font-size: 3rem;
+	margin-bottom: 0;
+}
+
+/*screen sizes 500px and up */
+
+@media(min-width: 500px) {
+	#landing {
+		display: flex;
+		height: 100%;
+	}
+
+	#landing-text {
+		height: 100vh;
+	}
+	#landing-image {
+		height: 100vh;
+	}
+}
+
+/*screen sizes 700px and up */
+
+@media (min-width: 700px) {
+	.btn{
+	padding: 1rem 3rem;
+	}
+}

@@ -1,76 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<script src="https://use.fontawesome.com/827f403702.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Frank+Ruhl+Libre|Playfair+Display|Quattrocento"
-	rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="contact.css">
-	<title>Marcon Photo</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>Marcon Photography</title>
 </head>
+
 <body>
-	<nav class="navbar">
-	  <a href="#" class="logo">Marcon</a>
-		<ul class="nav-links">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#portfolio">portfolio</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</nav>
+	<main>
+		<!--Landing Area-->
+		<div id="landing">
+			<div id="landing-text">
+				<div id="landing-inner">
+					<h1>Marcon Photography</h1>
+					<h2>Habesha Photography by Habesha Photographer</h2>
+					<a href="#images" class="btn" id="view-work">
+						View Work
+					</a>
 
-	<div class="banner-area fade" id="home"></div>
-	
-	<div class="about-area" id="about">
-		<div class="text-part">
-            <h1>ABOUT Marcon Photography</h1>
-            <h3>Welcome!</h3>
-			<p>I'm Biniyam, and i’m a hobbyist photographer. Currently based in Columbus and available for destination weddings. 
-                 I shoot with digital camera and i use a mix of Photojournalistic, Editorial and Fine Art Style to document 
-                 sincere moments and tell my clients their story in the most beautiful and timeless way. 
-                 I love to take pictures of happy people and be the part of their story.
-                 Here you will find different series of photographs that reflect my style. 
-                 If our views coincide, and you feel that I am the photographer you were looking for, then send me an email. </p>	
-		</div>
-	</div>
-
-		<div class="portfolio-area" id="portfolio">
-			<div class="text-part">
-				<h1>Portfolio</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, laborum alias labore placeat voluptas
-					nemo, quae hic veritatis quam ipsam debitis unde animi nostrum impedit. Nam hic fugiat inventore
-				temporibus.</p>			
+				</div>
 			</div>
+			<div id="landing-image"></div>
+		</div>
+		<div id="images">
+			<div id="header">
+				<h2>Our Work</h2>
+			</div>
+
+			<img src="https://source.unsplash.com/1600x900/?nature,water" alt="water">
+			<div class="caption">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, distinctio!</p>
+			</div>
+
+			<img src="https://source.unsplash.com/1600x900/?nature,trees" alt="trees">
+			<div class="caption">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, distinctio!</p>
+			</div>
+
+			<img src="https://source.unsplash.com/1600x900/?nature,flowers" alt="flowers">
+			<div class="caption">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, distinctio!</p>
+			</div>
+
+			<img src="https://source.unsplash.com/1600x900/?nature,dog" alt="dogs">
+			<div class="caption">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, distinctio!</p>
+			</div>
+
+			<img src="https://source.unsplash.com/1600x900/?nature,coffee" alt="coffee">
+			<div class="caption">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, distinctio!</p>
+			</div>
+
 		</div>
 
-		<div class="contact-area" id="contact">
-                <section class="contact">
-                        <h1 class="title">Contact</h1>
-                        <form class="contact-form row">
-                           <div class="form-field col x-50">
-                              <input id="name" class="input-text js-input" type="text" required>
-                              <label class="label" for="name">Name</label>
-                           </div>
-                           <div class="form-field col x-50">
-                              <input id="email" class="input-text js-input" type="email" required>
-                              <label class="label" for="email">E-mail</label>
-                           </div>
-                           <div class="form-field col x-100">
-                              <input id="message" class="input-text js-input" type="text" required>
-                              <label class="label" for="message">Message</label>
-                           </div>
-                           <div class="form-field col x-100 align-center">
-                              <input class="submit-btn" type="submit" value="Submit">
-                           </div>
-                        </form>
-                </section>                 
-		</div>
+	</main>
 
-		<footer class="footer">
-			<div class="footer-copyright"> Copyright © 2019 Marcon Photography, All rights reserved</div>
-		</footer>
-        <script src = "contact.js"></script>
-		<script src="app.js"></script>
-	</body>
+	<footer>
+		<h3>Get In Touch</h3>
+		<p>Email or Call Us to Set Up a consult</p>
+		<p>Email:
+			<strong>contact@marconphotos.test</strong>
+		</p>
+		<p>Phone:
+			<strong>(858) 952-8786</strong>
+		</p>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+</body>
+
 </html>
