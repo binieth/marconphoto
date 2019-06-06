@@ -41,4 +41,4 @@ var today = new Date();
 var year  = today.getFullYear();
 
 var e = document.getElementById('copyright');
-e.innerHTML = '<p> Copyright &copy;' + year + '</p>';
+e.innerHTML = '<p> Copyright &copy;' + year + ' Biniyam @ Marcon Photography' + '</p>';

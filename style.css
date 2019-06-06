@@ -18,6 +18,8 @@ h2 {
 	font-size: 1.2rem;
 	text-transform: capitalize;
 	margin: 0;
+	text-align: left;
+	padding-left: 15px;
 }
 
 img{
