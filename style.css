@@ -28,6 +28,20 @@ img{
 
 }
 
+img:hover{
+    color: #424242; 
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(1.15);
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+
+}
+
 main {
 	max-width: 900px;
 	margin: auto;
@@ -73,7 +87,7 @@ main {
 
 .btn:hover {
 	/* background: white; */
-	color: background-color: #21D4FD;
+	background-color: #21D4FD;
 	background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
 	;
 }
