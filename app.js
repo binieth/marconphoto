@@ -35,6 +35,17 @@ setTimeout(type, 400);
 
 }());
 
+//image on click
+
+/* $(function ()
+{
+    $('img').on('click', function ()
+    {
+        $(this).width(1000);
+    });
+});
+*/
+
 // footer copyright year
 
 var today = new Date();
