@@ -13,7 +13,7 @@ $('#view-work').on('click', function(){
 
 // typing effect
 
-const texts = ['family & children photo', 'wedding & engagement', 'maternity photo', 'birthday photo', 'graduation photo' ];
+const texts = ['Family & Children photo', 'Wedding & Engagement', 'Maternity photo', 'Birthday photo', 'Graduation photo' ];
 let count = 0;
 let index = 0;
 let currentText = '';
